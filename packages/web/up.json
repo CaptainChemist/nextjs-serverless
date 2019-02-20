@@ -1,0 +1,31 @@
+{
+  "name": "nextjs-example",
+  "profile": "default",
+  "regions": ["us-east-1"],
+  "lambda": {
+    "memory": 512,
+    "runtime": "nodejs8.10"
+  },
+  "proxy": {
+    "command": "npm start",
+    "timeout": 25,
+    "listen_timeout": 15,
+    "shutdown_timeout": 15
+  },
+  "stages": {
+    "development": {
+      "proxy": {
+        "command": "yarn dev"
+      }
+    }
+  },
+  "environment": {
+    "NODE_ENV": "production"
+  },
+  "error_pages": {
+    "variables": {
+      "support_email": "stephen@next-serverless.com",
+      "color": "#2986e2"
+    }
+  }
+}
