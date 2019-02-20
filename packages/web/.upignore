@@ -1,0 +1,5 @@
+!src/.next
+__tests__
+nodemon.json
+jest.config.js
+jest.setup.js

@@ -1,0 +1,9 @@
+query listTodosQuery {
+  listTodos {
+    items {
+      id
+      name
+      completed
+    }
+  }
+}
