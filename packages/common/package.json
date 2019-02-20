@@ -1,0 +1,20 @@
+{
+  "name": "@next-serverless/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "watch": "rm -rf ./dist && tsc --watch"
+  },
+  "devDependencies": {
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/yup": "^0.26.9",
+    "yup": "^0.26.10"
+  }
+}

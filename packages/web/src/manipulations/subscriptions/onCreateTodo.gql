@@ -1,0 +1,7 @@
+subscription onCreateTodoSubscription {
+  onCreateTodo {
+    id
+    name
+    completed
+  }
+}
